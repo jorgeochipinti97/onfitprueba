@@ -27,7 +27,7 @@ import {
 import { CartContext } from "../../context/cart/CartContext";
 
 import { ShopLayout } from "../../components/layouts";
-import { ProductSlideshow, SizeSelector } from "../../components/products";
+import { ProductSlideshow } from "../../components/products";
 
 import { IProduct, ICartProduct } from "../../interfaces";
 import { capitalizarPrimeraLetraPalabras, currency } from "../../utils";
