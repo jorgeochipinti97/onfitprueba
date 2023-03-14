@@ -1,12 +1,5 @@
-import { Box, Typography } from "@mui/material";
-import Head from "next/head";
-import { ProductList } from "../components/products";
-import { ShopLayout } from "../components/layouts";
-import { SliderKeen } from "../components/SliderKeen";
-import { IProduct } from "../interfaces";
-
-export default function Home() {
-  let populares: IProduct[] = [
+import { IProduct } from '../interfaces/products';
+export let populares: IProduct[] = [
     {
         description: '',
         images: ['https://res.cloudinary.com/dcvieavco/image/upload/v1678770982/stainless-steel-water-bottle-black-17oz-front-640d672f77c6b_gxmaz7.jpg', 'https://res.cloudinary.com/dcvieavco/image/upload/v1678770983/stainless-steel-water-bottle-black-17oz-front-640d670f8245a_lj8ojc.jpg'],
@@ -53,20 +46,3 @@ export default function Home() {
     },
 
 ]
-  return (
-    <>
-      <Head>
-        <title>Onfit Ecommerce</title>
-      </Head>
-      <ShopLayout title="Onfit Ecommerce" pageDescription="">
-        <SliderKeen />
-        <Box display="flex" justifyContent="center" sx={{ mb: 5 }}>
-          <Typography variant="h3" textAlign="center">
-            Populares
-          </Typography>
-        </Box>
-        <ProductList products={populares} />
-      </ShopLayout>
-    </>
-  );
-}
