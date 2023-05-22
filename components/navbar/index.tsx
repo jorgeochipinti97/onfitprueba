@@ -54,12 +54,12 @@ export const Navbar = () => {
           <NextLink href="/" passHref>
             <Button
               sx={{ textDecoration: "none" }}
-              color={asPath === "/" ? "primary" : "info"}>
+              color={asPath === "/" ? "secondary" : "info"}>
               Inicio
             </Button>
           </NextLink>
           <NextLink href="/productos" passHref>
-            <Button color={asPath === "/productos" ? "primary" : "info"}>
+            <Button color={asPath === "/productos" ? "secondary" : "info"}>
               Hombres
             </Button>
           </NextLink>
@@ -69,27 +69,27 @@ export const Navbar = () => {
             </Button>
           </NextLink>
           <NextLink href="/faqs" passHref>
-            <Button color={asPath === "/faqs" ? "primary" : "info"}>
+            <Button color={asPath === "/faqs" ? "secondary" : "info"}>
               Suplementos
             </Button>
           </NextLink>
           <NextLink href="/faqs" passHref>
-            <Button color={asPath === "/faqs" ? "primary" : "info"}>
+            <Button color={asPath === "/faqs" ? "secondary" : "info"}>
               Equipamiento
             </Button>
           </NextLink>
           <NextLink href="/faqs" passHref>
-            <Button color={asPath === "/faqs" ? "primary" : "info"}>
+            <Button color={asPath === "/faqs" ? "secondary" : "info"}>
               Accesorios
             </Button>
           </NextLink>
           <NextLink href="/faqs" passHref>
-            <Button color={asPath === "/faqs" ? "primary" : "info"}>
+            <Button color={asPath === "/faqs" ? "secondary" : "info"}>
               Medias
             </Button>
           </NextLink>
           <NextLink href="/faqs" passHref>
-            <Button color={asPath === "/faqs" ? "primary" : "info"}>
+            <Button color={asPath === "/faqs" ? "secondary" : "info"}>
               FAQS
             </Button>
           </NextLink>

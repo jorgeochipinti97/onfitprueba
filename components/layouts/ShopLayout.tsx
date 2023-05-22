@@ -37,18 +37,14 @@ export const ShopLayout: FC<Props> = ({children, title, pageDescription, imageFu
             </nav>
 
             <SideMenu />
-            {/* <Box display='flex' jusitfyContent='center'> */}
 
                 <main style={{
-                    marginTop: '80px',
                     padding: '0px 0px',
     
                 }}>
                     {children}
                 </main>
-            {/* </Box > */}
 
-            {/* Footer */}
             <Footer />
 
         </>

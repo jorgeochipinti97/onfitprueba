@@ -11,7 +11,7 @@ export const lightTheme = createTheme({
       main: '#1E1E1E'
     },
     secondary: {
-      main: '#3A64D8'
+      main: 'rgb(254, 221, 45)'
     },
     info: {
       main: '#fff'
@@ -49,6 +49,9 @@ export const lightTheme = createTheme({
         subtitle1: {
           fontSize: 18,
           fontWeight: 600
+        },
+        body1:{
+          fontSize:13
         }
       }
     },
@@ -66,10 +69,7 @@ export const lightTheme = createTheme({
           textTransform: 'none',
           boxShadow: 'none',
           borderRadius: 10,
-          // ":hover": {
-          //   backgroundColor: 'rgba(0,0,0,0.65)',
-          //   transition: 'all 0.3s ease-in-out'
-          // }
+          fontWeight:'600',
         }
       }
     },

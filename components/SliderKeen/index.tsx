@@ -1,5 +1,7 @@
 import * as React from "react";
 import { useKeenSlider } from "keen-slider/react";
+import { Box } from "@mui/system";
+import Image from "next/image";
 
 const animation = { duration: 45000, easing: (t: number) => t }
 
@@ -24,12 +26,17 @@ export const SliderKeen = () => {
   })
   return (
     <div ref={sliderRef} className="keen-slider">
-      <div className="keen-slider__slide number-slide1">1</div>
-      <div className="keen-slider__slide number-slide2">2</div>
-      <div className="keen-slider__slide number-slide3">3</div>
-      <div className="keen-slider__slide number-slide4">4</div>
-      <div className="keen-slider__slide number-slide5">5</div>
-      <div className="keen-slider__slide number-slide6">6</div>
+      <div className="keen-slider__slide ">
+        <Box>
+          <Image width={1800-200} height={1000-200} src='/slider1.png' alt='' />
+        </Box>
+      </div>
+      <div className="keen-slider__slide ">
+        <Box>
+          <Image width={1800-200} height={1000-200} src='/slider2.png' alt='' />
+        </Box>
+      </div>
+
     </div>
   );
 };
