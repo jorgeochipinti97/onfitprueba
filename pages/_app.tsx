@@ -15,16 +15,16 @@ export default function App({ Component, pageProps }: AppProps) {
       easing: "ease-out-cubic",
       once: true,
       offset: 50,
-      delay:100
+      delay: 100
     });
 
   })
   return (
     <UiProvider>
-        <ThemeProvider theme={lightTheme}>
-          <CssBaseline />
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </UiProvider>
+      <ThemeProvider theme={lightTheme}>
+        <CssBaseline />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </UiProvider>
   );
 }

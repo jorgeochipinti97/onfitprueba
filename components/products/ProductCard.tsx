@@ -70,7 +70,7 @@ export const ProductCard: FC<Props> = ({ product }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <NextLink href="/producto">
+      {/* <NextLink href="/producto"> */}
         <div data-aos="flip-left">
           <Box sx={{ m: 1 }}>
             <Link>
@@ -102,6 +102,7 @@ export const ProductCard: FC<Props> = ({ product }) => {
                 variant="subtitle1"
                 textAlign={"center"}
                 fontWeight={700}
+                color='primary'
                 sx={{ width: 120 }}
               >
                 {capitalizarPrimeraLetraPalabras(`${product.title}`)}
@@ -126,7 +127,7 @@ export const ProductCard: FC<Props> = ({ product }) => {
 
           <Divider sx={{ my: 2 }} />
         </div>
-      </NextLink>
+      {/* </NextLink> */}
     </Grid>
   );
 };

@@ -47,26 +47,45 @@ export const Navbar = () => {
 
         <Box
           sx={{
-            display:  { xs: "none", sm: "block" },
+            display: { xs: "none", sm: "block" },
           }}
           className="fadeIn"
         >
           <NextLink href="/" passHref>
             <Button
               sx={{ textDecoration: "none" }}
-              color={asPath === "/" ? "primary" : "info"}
-            >
+              color={asPath === "/" ? "primary" : "info"}>
               Inicio
             </Button>
           </NextLink>
           <NextLink href="/productos" passHref>
             <Button color={asPath === "/productos" ? "primary" : "info"}>
-              Productos
+              Hombres
             </Button>
           </NextLink>
           <NextLink href="/contacto" passHref>
             <Button color={asPath === "/contacto" ? "primary" : "info"}>
-              Contacto
+              Mujeres
+            </Button>
+          </NextLink>
+          <NextLink href="/faqs" passHref>
+            <Button color={asPath === "/faqs" ? "primary" : "info"}>
+              Suplementos
+            </Button>
+          </NextLink>
+          <NextLink href="/faqs" passHref>
+            <Button color={asPath === "/faqs" ? "primary" : "info"}>
+              Equipamiento
+            </Button>
+          </NextLink>
+          <NextLink href="/faqs" passHref>
+            <Button color={asPath === "/faqs" ? "primary" : "info"}>
+              Accesorios
+            </Button>
+          </NextLink>
+          <NextLink href="/faqs" passHref>
+            <Button color={asPath === "/faqs" ? "primary" : "info"}>
+              Medias
             </Button>
           </NextLink>
           <NextLink href="/faqs" passHref>
