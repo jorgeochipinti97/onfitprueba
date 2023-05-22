@@ -6,7 +6,7 @@ const index = () => {
     return (
         <>
             <ShopLayout title='FAQS' pageDescription="faqs">
-                <Box display='flex' justifyContent='center'>
+                <Box display='flex' justifyContent='center' sx={{mt:5}}>
 
                     <Box sx={{ width: '100vw !important' }}>
 
@@ -73,7 +73,7 @@ const index = () => {
 
                             <div data-aos="fade-up-right">
                                 <AccordionFaqs pregunta="How to track my order in real time?" respuesta='For real-time tracking, enter the air waybill number received in your email on the FedEx or DHL website depending on the company delivering your order.' />
-                                <Divider sx={{ my: 1, m: 2 }} />
+
                             </div>
                         </Box>
 

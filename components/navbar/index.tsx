@@ -135,7 +135,7 @@ export const Navbar = () => {
           </Badge>
         </IconButton>
 
-        <Button onClick={toggleSideMenu}>Menu</Button>
+
       </Toolbar>
     </AppBar>
   );
