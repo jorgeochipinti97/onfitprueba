@@ -40,10 +40,8 @@ export const ShopLayout: FC<Props> = ({children, title, pageDescription, imageFu
             {/* <Box display='flex' jusitfyContent='center'> */}
 
                 <main style={{
-                    margin: '80px auto',
-                    minHeight:'60vh',
-                    maxWidth: '1440px',
-                    padding: '0px 0px'
+                    marginTop: '80px',
+                    padding: '0px 0px',
     
                 }}>
                     {children}

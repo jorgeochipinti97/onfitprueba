@@ -1,9 +1,11 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Divider, Grid, Typography } from "@mui/material";
 import Head from "next/head";
 import { ProductList } from "../components/products";
 import { ShopLayout } from "../components/layouts";
 import { SliderKeen } from "../components/SliderKeen";
 import { IProduct } from "../interfaces";
+import { CardSede } from "../components";
+import Image from "next/image";
 
 export default function Home() {
   let populares: IProduct[] = [
@@ -59,13 +61,372 @@ export default function Home() {
         <title>Onfit Ecommerce</title>
       </Head>
       <ShopLayout title="Onfit Ecommerce" pageDescription="">
+
         <SliderKeen />
-        <Box display="flex" justifyContent="center" sx={{ mb: 5 }}>
-          <Typography variant="h3" textAlign="center">
-            Populares
-          </Typography>
+        <Box sx={{ textAlign: 'center', my: 5 }} display='flex' justifyContent='center' flexDirection='column' alignItems='center'>
+          <Typography sx={{ mt: 4, width: '80%' }} variant='subtitle1'>Descubre los Mejores Productos Fitness de OnFit, la Cadena de Gimnasios Líder en Buenos Aires </Typography>
+          <Typography sx={{ mt: 1, width: '80%', fontSize: 15 }} variant='body1'>Bienvenido la tienda en línea de OnFit, la exitosa cadena de gimnasios con sedes en la Ciudad de Buenos Aires y Gran Buenos Aires.<br /> Te presentamos  nuestra selección de productos de calidad que te ayudarán a alcanzar tus metas de acondicionamiento físico y mantener un estilo de vida saludable.</Typography>
         </Box>
+
         <ProductList products={populares} />
+
+
+        <Grid container sx={{ mt: 5 }}>
+          <Grid item sm={6} lg={6} xl={6} >
+            <Box sx={{ textAlign: 'center' }} display='flex' justifyContent='center' >
+              <Image src='https://res.cloudinary.com/dcvieavco/image/upload/v1678770903/all-over-print-recycled-unisex-sports-jersey-white-front-640d682e0e707_fxbjod.png' width={500} height={500} alt='asd' />
+            </Box>
+          </Grid>
+          <Grid item sm={6} lg={6} xl={6} >
+            <Box sx={{ textAlign: 'center' }} display='flex' justifyContent='center' flexDirection='column' alignItems='center' height='100%'>
+              <Typography sx={{ mt: 1, width: '80%' }} variant='subtitle1'>Calidad Garantizada por OnFit</Typography>
+              <Typography sx={{ mt: 1, width: '80%' }} variant='body1'>En OnFit, nos comprometemos a ofrecerte la más alta calidad. Trabajamos con proveedores confiables y seleccionamos cada artículo de nuestra tienda con atención para garantizar tu satisfacción y mejorar tu experiencia de entrenamiento.</Typography>
+
+            </Box>
+          </Grid>
+          <Grid item sm={6} lg={6} xl={6} >
+            <Box sx={{ textAlign: 'center' }} display='flex' justifyContent='center' flexDirection='column' alignItems='center' height='100%'>
+              <Typography sx={{ mt: 1, width: '80%' }} variant='subtitle1'>Equipamiento de Última Generación para Tu Hogar</Typography>
+              <Typography sx={{ mt: 1, width: '80%' }} variant='body1'>Descubre nuestra variedad de equipos de vanguardia para entrenamiento funcional, cardio y fuerza. Confía en la calidad y el respaldo de OnFit para disfrutar de una experiencia de gimnasio excepcional en la comodidad de tu hogar.</Typography>
+              <Box sx={{ mt: 5 }}>
+                <Button color='secondary' size='large'>Explora nuestro catálogo</Button>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item sm={6} lg={6} xl={6} >
+            <Box sx={{ textAlign: 'center' }} display='flex' justifyContent='center' >
+              <Image src='https://res.cloudinary.com/dcvieavco/image/upload/v1678771084/AnyConv.com__D_NQ_NP_984611-MLA31466353739_072019-O_plmihi.jpg' width={500} height={500} alt='asd' />
+            </Box>
+          </Grid>
+          <Grid item sm={6} lg={6} xl={6} >
+            <Box sx={{ textAlign: 'center' }} display='flex' justifyContent='center' >
+              <Image src='https://res.cloudinary.com/dcvieavco/image/upload/v1678770982/stainless-steel-water-bottle-black-17oz-front-640d672f77c6b_gxmaz7.jpg' width={500} height={500} alt='asd' />
+            </Box>
+          </Grid>
+          <Grid item sm={6} lg={6} xl={6} >
+            <Box sx={{ textAlign: 'center' }} display='flex' justifyContent='center' flexDirection='column' alignItems='center' height='100%'>
+              <Typography sx={{ mt: 1, width: '80%' }} variant='subtitle1'>Accesorios de Alto Rendimiento para Potenciar Tu Entrenamiento</Typography>
+              <Typography sx={{ mt: 1, width: '80%' }} variant='body1'>Descubre nuestra amplia gama de accesorios de alta calidad que complementarán y potenciarán tu rutina de ejercicios. En OnFit, la cadena de gimnasios líder en Buenos Aires, te ofrecemos una cuidada selección de accesorios diseñados para ayudarte a alcanzar tus metas de acondicionamiento físico de manera efectiva y cómoda.</Typography>
+              <Box sx={{ mt: 5 }}>
+                <Button color='secondary' size='large'>Descubre nuestros accesorios</Button>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item sm={6} lg={6} xl={6} >
+            <Box sx={{ textAlign: 'center' }} display='flex' justifyContent='center' flexDirection='column' alignItems='center' height='100%'>
+              <Typography sx={{ mt: 1, width: '80%' }} variant='subtitle1'>Suplementos de Calidad para Potenciar Tu Entrenamiento</Typography>
+              <Typography sx={{ mt: 1, width: '80%' }} variant='body1'>Descubre nuestra selección de suplementos de alta calidad diseñados para optimizar tu rendimiento y maximizar los resultados de tu entrenamiento. En OnFit, te ofrecemos una amplia gama de suplementos esenciales, desde proteínas hasta pre-entrenamientos y más, para ayudarte a alcanzar tus metas fitness de manera efectiva. Potencia tu rendimiento y maximiza tus resultados con nuestros suplementos confiables y respaldados por expertos en nutrición deportiva</Typography>
+              <Box sx={{ mt: 5 }}>
+                <Button color='secondary' size='large'>¡Potenciarme ahora!</Button>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item sm={6} lg={6} xl={6} >
+            <Box sx={{ textAlign: 'center' }} display='flex' justifyContent='center' >
+              <Image src='https://res.cloudinary.com/dcvieavco/image/upload/v1678771074/AnyConv.com__colageno_ex4c02.jpg' width={500} height={500} alt='asd' />
+            </Box>
+          </Grid>
+        </Grid>
+
+
+
+
+
+
+
+        <Grid container spacing={2} sx={{ mt: 2 }} >
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={3}
+            xl={3}
+            lg={3}
+
+          >
+            <Box
+              display="flex"
+              justifyContent="center"
+
+            >
+              <div data-aos="flip-left">
+                <CardSede
+                  name="SAAVEDRA"
+                  address="CRISÓLOGO LARRALDE 3929,CABA"
+                />
+              </div>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={3}
+            xl={3}
+            lg={3}
+
+          >
+            <Box
+              display="flex"
+              justifyContent="center"
+
+            >
+              <div data-aos="flip-left">
+                <CardSede name="OBELISCO" address="LAVALLE 925,CABA" />
+              </div>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={3}
+            xl={3}
+            lg={3}
+
+          >
+            <Box
+              display="flex"
+              justifyContent="center"
+
+            >
+              <div data-aos="flip-left">
+                <CardSede name="ALMAGRO" address="AV. CORRIENTES 4573,CABA" />
+              </div>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={3}
+            xl={3}
+            lg={3}
+
+          >
+            <Box
+              display="flex"
+              justifyContent="center"
+
+            >
+              <div data-aos="flip-left">
+                <CardSede
+                  name="COLEGIALES"
+                  address="AV. ALVAREZ THOMAS 28,CABA"
+                />
+              </div>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={3}
+            xl={3}
+            lg={3}
+
+          >
+            <Box
+              display="flex"
+              justifyContent="center"
+
+            >
+              <div data-aos="flip-left">
+                <CardSede
+                  name="LOMAS DE ZAMORA"
+                  address="AV. H. YRIGOYEN 9549"
+                />
+              </div>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={3}
+            xl={3}
+            lg={3}
+
+          >
+            <Box
+              display="flex"
+              justifyContent="center"
+
+            >
+              <div data-aos="flip-left">
+                <CardSede
+                  name="FLORES"
+                  address="FRAY CAYETANO 53,
+CABA"
+                />
+              </div>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={3}
+            xl={3}
+            lg={3}
+
+          >
+            <Box
+              display="flex"
+              justifyContent="center"
+
+            >
+              <div data-aos="flip-left">
+                <CardSede
+                  name="PLAZA DE MAYO"
+                  address="ESMERALDA 33,
+CABA"
+                />
+              </div>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={3}
+            xl={3}
+            lg={3}
+
+          >
+            <Box
+              display="flex"
+              justifyContent="center"
+
+            >
+              <div data-aos="flip-left">
+                <CardSede
+                  name="PILAR"
+                  address="COL. ESTE PANAMERICANA KM 53,3,"
+                />
+              </div>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={3}
+            xl={3}
+            lg={3}
+
+          >
+            <Box
+              display="flex"
+              justifyContent="center"
+
+            >
+              <div data-aos="flip-left">
+                <CardSede name="OLIVOS" address="RICARDO GUTIÉRREZ 1681" />
+              </div>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={12} md={3} xl={3} lg={3}>
+            <Box
+              display="flex"
+              justifyContent="center"
+              sx={{ overflowY: "hidden" }}
+            >
+              <div data-aos="flip-left">
+                <CardSede
+                  name="CONGRESO"
+                  address="COMBATE DE LOS POZOS 61,
+CABA"
+                />
+              </div>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={3}
+            xl={3}
+            lg={3}
+
+          >
+            <Box
+              display="flex"
+              justifyContent="center"
+
+            >
+              <div data-aos="flip-left">
+                <CardSede name="LA PLATA" address="C. 46 473" />
+              </div>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={3}
+            xl={3}
+            lg={3}
+
+          >
+            <Box
+              display="flex"
+              justifyContent="center"
+
+            >
+              <div data-aos="flip-left">
+                <CardSede
+                  name="QUILMES"
+                  address="C. C. NUEVO QUILMES PLAZA L. 54"
+                />
+              </div>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={3}
+            xl={3}
+            lg={3}
+
+          >
+            <Box
+              display="flex"
+              justifyContent="center"
+
+            >
+              <div data-aos="flip-left">
+                <CardSede
+                  name="SAAVEDRA"
+                  address="CRISÓLOGO LARRALDE 3929,CABA"
+                />
+              </div>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={3}
+            xl={3}
+            lg={3}
+
+          >
+            <Box
+              display="flex"
+              justifyContent="center"
+
+            >
+              <div data-aos="flip-left">
+                <CardSede
+                  name="MASCHWITZ"
+                  address="COL. ESTE, RAMAL ESCOBAR KM 44"
+                />
+              </div>
+            </Box>
+          </Grid>
+        </Grid>
       </ShopLayout>
     </>
   );

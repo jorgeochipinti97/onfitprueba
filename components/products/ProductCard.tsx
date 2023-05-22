@@ -29,13 +29,10 @@ interface Props {
 export const ProductCard: FC<Props> = ({ product }) => {
   const [isInFavorites, setIsInFavorites] = useState<Boolean>();
   const [isHovered, setIsHovered] = useState(false);
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
-  const [discountPrice, setDiscountPrice] = useState<number>(product.price);
+  // const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-  const handleTitle = (title: string) => {
-    title.split("");
-    console.log(title);
-  };
+
+
   const productImage = useMemo(() => {
     try {
       return isHovered ? product.images[1] : product.images[0];
@@ -51,13 +48,7 @@ export const ProductCard: FC<Props> = ({ product }) => {
     return precioConDescuento;
   };
 
-  useEffect(() => {
-    const a = handlePrice(product.price, 10);
-    setDiscountPrice(a);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
 
-    console.log(product.title)
-  }, []);
 
 
   return (
@@ -67,6 +58,7 @@ export const ProductCard: FC<Props> = ({ product }) => {
       sm={4}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      sx={{cursor:'pointer'}}
     >
       {/* <NextLink href="/producto"> */}
         <div data-aos="flip-left">
@@ -76,7 +68,7 @@ export const ProductCard: FC<Props> = ({ product }) => {
                 <CardMedia
                   component="div"
                   className="fadeIn"
-                  onLoad={() => setIsImageLoaded(true)}
+                  // onLoad={() => setIsImageLoaded(true)}
                 >
                   <Image
                     width={400}
@@ -101,7 +93,7 @@ export const ProductCard: FC<Props> = ({ product }) => {
                 textAlign={"center"}
                 fontWeight={700}
                 color='primary'
-                sx={{ width: 120 }}
+                sx={{  }}
               >
                 {capitalizarPrimeraLetraPalabras(`${product.title}`)}
               </Typography>
