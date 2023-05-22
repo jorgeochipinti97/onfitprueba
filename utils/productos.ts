@@ -48,7 +48,7 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'caminadora',
         title: 'Caminadora',
-        type: 'maquinas',
+        type: 'accesorios',
     },
     {
         description: '',
@@ -64,7 +64,7 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'corpiño_onfit',
         title: 'corpiño onfit',
-        type: 'ropa',
+        type: 'accesorios',
     },
     {
         description: '',
@@ -104,7 +104,7 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'leggins_onfit',
         title: 'leggins onfit',
-        type: 'ropa',
+        type: 'accesorios',
     },
     {
         description: '',
@@ -112,7 +112,7 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'leggins_deportivos',
         title: 'leggins deportivos',
-        type: 'ropa',
+        type: 'accesorios',
     },
 
     {
@@ -129,7 +129,7 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'musculosa',
         title: 'musculosa onfit',
-        type: 'ropa',
+        type: 'accesorios',
     },
     {
         description: '',
@@ -153,7 +153,7 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'remera',
         title: 'Remera Onfit',
-        type: 'ropa',
+        type: 'accesorios',
     },
     {
         description: '',
@@ -161,7 +161,7 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'set de mancuernas',
         title: 'set de mancuernas',
-        type: 'maquinas',
+        type: 'accesorios',
     },
     {
         description: '',
@@ -177,7 +177,7 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'short',
         title: 'short',
-        type: 'ropa',
+        type: 'accesorios',
     },
     {
         description: '',
@@ -185,7 +185,7 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'short_femenino',
         title: 'short femenino',
-        type: 'ropa',
+        type: 'accesorios',
     },
     {
         description: '',
@@ -193,7 +193,7 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'sujetador_deportivo',
         title: 'sujetador deportivo',
-        type: 'ropa',
+        type: 'accesorios',
     },
     {
         description: '',
