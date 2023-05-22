@@ -55,12 +55,10 @@ export const ProductCard: FC<Props> = ({ product }) => {
     const a = handlePrice(product.price, 10);
     setDiscountPrice(a);
     // eslint-disable-next-line react-hooks/exhaustive-deps
+
+    console.log(product.title)
   }, []);
 
-  const onToggleFavorite = () => {
-    localFavorites.toggleFavorite(product);
-    setIsInFavorites(!isInFavorites);
-  };
 
   return (
     <Grid
@@ -92,7 +90,7 @@ export const ProductCard: FC<Props> = ({ product }) => {
           </Box>
           <Box
             sx={{
-              display: isImageLoaded ? "block" : "none",
+              // display: isImageLoaded ? "block" : "none",
               position: "relative",
             }}
 
