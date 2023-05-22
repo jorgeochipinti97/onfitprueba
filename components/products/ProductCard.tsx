@@ -95,7 +95,7 @@ export const ProductCard: FC<Props> = ({ product }) => {
               display: isImageLoaded ? "block" : "none",
               position: "relative",
             }}
-            className="fadeIn"
+
           >
             <Box display="flex" justifyContent="center">
               <Typography
