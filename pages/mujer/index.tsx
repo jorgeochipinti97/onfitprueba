@@ -4,7 +4,7 @@ import { ProductFilterPage } from "../../components/products/ProductFilter";
 
 const index = () => {
   return (
-    <ShopLayout title="" pageDescription="">
+    <ShopLayout title="Onfit - Mujer" pageDescription="">
       <ProductFilterPage />
     </ShopLayout>
   );

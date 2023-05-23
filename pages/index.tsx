@@ -66,7 +66,7 @@ export default function Home() {
         <div data-aos="fade-up">
           <Box sx={{ textAlign: 'center', mb: 5 }} display='flex' justifyContent='center' flexDirection='column' alignItems='center'>
             <Typography sx={{ mt: 4, width: '80%' }} variant='subtitle1'>Descubre los Mejores Productos Fitness de OnFit, la Cadena de Gimnasios Líder en Buenos Aires </Typography>
-            <Typography sx={{ mt: 1, width: '80%', fontSize: 15 }} variant='body1'>Bienvenido la tienda en línea de OnFi, en la cual te presentamos  nuestra selección de productos de calidad que te ayudarán a alcanzar tus metas  y mantener un estilo de vida saludable.</Typography>
+            <Typography sx={{ mt: 1, width: '80%', fontSize: 15 }} variant='body1'>¡Bienvenido la tienda en línea de OnFit! Te presentamos  nuestra selección de productos de calidad que te ayudarán a alcanzar tus metas  y mantener un estilo de vida saludable.</Typography>
           </Box>
         </div>
 

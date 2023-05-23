@@ -17,6 +17,7 @@ export let productos: IProduct[] = [
         slug: 'beta_alanina',
         title: 'Beta Alanina',
         type: 'suplementos',
+        subtype:'quemadores'
     },
     {
         description: '',
@@ -25,6 +26,7 @@ export let productos: IProduct[] = [
         slug: 'bincha_onfit',
         title: 'Bincha Onfit',
         type: 'accesorios',
+        subtype:'gorros'
     },
     {
         description: '',
@@ -33,6 +35,7 @@ export let productos: IProduct[] = [
         slug: 'bolso_deportivo',
         title: 'Bolso Onfit',
         type: 'accesorios',
+        subtype:'bolsos'
     },
     {
         description: '',
@@ -41,6 +44,7 @@ export let productos: IProduct[] = [
         slug: 'botella_onfit',
         title: 'Botella Onfit',
         type: 'accesorios',
+        subtype:'botellas'
     },
     {
         description: '',
@@ -48,7 +52,8 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'caminadora',
         title: 'Caminadora',
-        type: 'accesorios',
+        type: 'equipamiento',
+        subtype:'maquinas'
     },
     {
         description: '',
@@ -57,6 +62,7 @@ export let productos: IProduct[] = [
         slug: 'colageno',
         title: 'colageno',
         type: 'suplementos',
+        subtype:'vitaminas'
     },
     {
         description: '',
@@ -64,15 +70,8 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'corpiño_onfit',
         title: 'corpiño onfit',
-        type: 'accesorios',
-    },
-    {
-        description: '',
-        images: ['https://res.cloudinary.com/dcvieavco/image/upload/v1678770993/shaker_gqwwuu.jpg','https://res.cloudinary.com/dcvieavco/image/upload/v1678770993/shaker_gqwwuu.jpg'],
-        price: 100,
-        slug: 'creatina',
-        title: 'creatina',
-        type: 'suplementos',
+        type: 'mujer',
+        subtype:'top'
     },
     {
         description: '',
@@ -81,6 +80,7 @@ export let productos: IProduct[] = [
         slug: 'escultor',
         title: 'escultor',
         type: 'suplementos',
+        subtype:'quemadores'
     },
     {
         description: '',
@@ -89,6 +89,7 @@ export let productos: IProduct[] = [
         slug: 'glutamina',
         title: 'glutamina',
         type: 'suplementos',
+        subtype:'vitaminas'
     },
     {
         description: '',
@@ -97,6 +98,7 @@ export let productos: IProduct[] = [
         slug: 'gorra_onfit',
         title: 'gorra onfit',
         type: 'accesorios',
+        subtype:'gorros'
     },
     {
         description: '',
@@ -104,7 +106,9 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'leggins_onfit',
         title: 'leggins onfit',
-        type: 'accesorios',
+        type: 'mujer',
+        subtype:'calza',
+    
     },
     {
         description: '',
@@ -112,7 +116,8 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'leggins_deportivos',
         title: 'leggins deportivos',
-        type: 'accesorios',
+        type: 'mujer',
+        subtype:'calza'
     },
 
     {
@@ -122,6 +127,7 @@ export let productos: IProduct[] = [
         slug: 'mochila_onfit',
         title: 'mochila onfit',
         type: 'accesorios',
+        subtype:'bolsos'
     },
     {
         description: '',
@@ -129,7 +135,8 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'musculosa',
         title: 'musculosa onfit',
-        type: 'accesorios',
+        type: 'hombre',
+        subtype:'musculosa'
     },
     {
         description: '',
@@ -138,6 +145,7 @@ export let productos: IProduct[] = [
         slug: 'pre_entreno',
         title: 'pre entreno',
         type: 'suplementos',
+        subtype:'creatina'
     },
     {
         description: '',
@@ -146,6 +154,7 @@ export let productos: IProduct[] = [
         slug: 'proteina',
         title: 'proteina',
         type: 'suplementos',
+        subtype:'proteina'
     },
     {
         description: '',
@@ -153,7 +162,17 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'remera',
         title: 'Remera Onfit',
-        type: 'accesorios',
+        type: 'hombre',
+        subtype:'remera oversize'
+    },
+    {
+        description: '',
+        images: ['https://res.cloudinary.com/dcvieavco/image/upload/v1678770903/all-over-print-recycled-unisex-sports-jersey-white-front-640d682e0e707_fxbjod.png','https://res.cloudinary.com/dcvieavco/image/upload/v1678770899/all-over-print-recycled-unisex-sports-jersey-white-front-640d682e0e684_arypmd.png','https://res.cloudinary.com/dcvieavco/image/upload/v1678770894/all-over-print-recycled-unisex-sports-jersey-white-front-640d682e0e52f_xp3aj9.png'],
+        price: 100,
+        slug: 'remera',
+        title: 'Remera Onfit',
+        type: 'mujer',
+        subtype:'remera oversize'
     },
     {
         description: '',
@@ -161,7 +180,8 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'set de mancuernas',
         title: 'set de mancuernas',
-        type: 'accesorios',
+        type: 'equipamiento',
+        subtype:'mancuernas'
     },
     {
         description: '',
@@ -170,14 +190,16 @@ export let productos: IProduct[] = [
         slug: 'shaker',
         title: 'shaker',
         type: 'accesorios',
+        subtype:'shakers'
     },
     {
         description: '',
         images: ['https://res.cloudinary.com/dcvieavco/image/upload/v1678770775/all-over-print-mens-recycled-athletic-shorts-white-front-640aa0b67d735_oiwdif.png','https://res.cloudinary.com/dcvieavco/image/upload/v1678770774/all-over-print-mens-recycled-athletic-shorts-white-front-640aa0b67d133_iyaorx.png','https://res.cloudinary.com/dcvieavco/image/upload/v1678770774/all-over-print-mens-recycled-athletic-shorts-white-right-640aa0b67d4a7_lso8ra.png'],
         price: 100,
-        slug: 'short',
-        title: 'short',
-        type: 'accesorios',
+        slug: 'short_hombre',
+        title: 'short hombre',
+        type: 'hombre',
+        subtype:'short'
     },
     {
         description: '',
@@ -185,7 +207,8 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'short_femenino',
         title: 'short femenino',
-        type: 'accesorios',
+        type: 'mujer',
+subtype:'short'
     },
     {
         description: '',
@@ -193,7 +216,8 @@ export let productos: IProduct[] = [
         price: 100,
         slug: 'sujetador_deportivo',
         title: 'sujetador deportivo',
-        type: 'accesorios',
+        type: 'mujer',
+        subtype:'top'
     },
     {
         description: '',
@@ -202,6 +226,7 @@ export let productos: IProduct[] = [
         slug: 'vicera',
         title: 'vicera',
         type: 'accesorios',
+        subtype:'gorros'
     },
 
 ]

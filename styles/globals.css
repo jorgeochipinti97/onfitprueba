@@ -13,7 +13,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  overflow-x:unset;
+  overflow-x:hidden;
 } 
 body {
   overflow-x: hidden

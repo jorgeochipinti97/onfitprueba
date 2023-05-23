@@ -135,9 +135,7 @@ const ProductPage = () => {
               </NextLink>
             </Box>
             <Divider sx={{ my: 1 }} />
-            <Box display="flex" justifyContent="center">
-              <Chip label="Free Shipping!" color="success" variant="outlined" />
-            </Box>
+
 
             <Box sx={{ my: 2 }}>
               <Typography variant="subtitle2" sx={{ m: 2 }}>

@@ -49,7 +49,7 @@ const FormQuery: FC<Props> = ({ product_ }) => {
         <Box >
             <div data-aos="zoom-in-down">
                 <Box sx={{ mt: 5 }} display='flex' justifyContent='center'>
-                    <Typography variant='h6'>Alguna consulta? Te escuchamos</Typography>
+                    <Typography variant='h6'>¿Alguna consulta? Te escuchamos</Typography>
                 </Box>
                 <Box display='flex' justifyContent='center'>
                     <Box display='flex' justifyContent='space-around' flexDirection='column' >
@@ -63,7 +63,7 @@ const FormQuery: FC<Props> = ({ product_ }) => {
                 <Box display='flex' justifyContent='center' sx={{ mt: 2 }}>
                     <Button color='secondary' size='large'
                         onClick={(e) => alert('tu consulta ha sido enviada')}
-                    >Send</Button>
+                    >Enviar</Button>
                 </Box>
             </div>
         </Box>

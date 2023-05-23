@@ -9,4 +9,4 @@ export interface IProduct {
 }
 
 export type IType = 'hombre' | 'mujer' | 'suplementos' | 'equipamiento' | 'accesorios' | 'medias'
-export type ISubtype = 'remera oversize' | 'remera deportiva' | 'musculosa' | 'buzo' | 'short' | 'pantalon' | 'top' | 'calza' | 'proteina' | 'creatina' | 'quemadores de grasa' | 'vitamina' | 'mancuerna' | 'maquinas' | 'training home' | 'gorro' | 'strap' | 'guante' | 'cinturon' | 'shaker' | 'botella'
+export type ISubtype = 'remera oversize' | 'remera deportiva' | 'musculosa' | 'buzo' | 'short' | 'pantalon' | 'top' | 'calza' | 'proteina' | 'creatina' | 'quemadores' | 'vitaminas' | 'mancuernas' |'bolsos' | 'maquinas' | 'training home' | 'gorros' | 'straps' | 'guantes' | 'cinturones' | 'shakers' | 'botellas'
