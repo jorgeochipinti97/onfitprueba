@@ -6,8 +6,12 @@ import { SliderKeen } from "../components/SliderKeen";
 import { IProduct } from "../interfaces";
 import { CardSede } from "../components";
 import Image from "next/image";
+import { useRouter } from 'next/router';
 
 export default function Home() {
+const router = useRouter()
+
+
   let populares: IProduct[] = [
     {
       description: '',
@@ -96,7 +100,7 @@ export default function Home() {
               <Typography sx={{ mt: 1, width: '80%' }} variant='subtitle1'>Equipamiento de Última Generación para Tu Hogar</Typography>
               <Typography sx={{ mt: 1, width: '80%' }} variant='body1'>Descubre nuestra variedad de equipos de vanguardia para entrenamiento funcional, cardio y fuerza. Confía en la calidad y el respaldo de OnFit para disfrutar de una experiencia de gimnasio excepcional en la comodidad de tu hogar.</Typography>
               <Box sx={{ mt: 5 }} justifyContent='center'>
-                <Button color='secondary' size='large'>Explora nuestro catálogo</Button>
+                <Button color='secondary' size='large' onClick={()=> router.push('/equipamiento')}>Explora nuestro catálogo</Button>
               </Box>
             </div>
 
@@ -125,7 +129,7 @@ export default function Home() {
               <Typography sx={{ mt: 1, width: '80%' }} variant='subtitle1'>Accesorios de Alto Rendimiento para Potenciar Tu Entrenamiento</Typography>
               <Typography sx={{ mt: 1, width: '80%' }} variant='body1'>Descubre nuestra amplia gama de accesorios de alta calidad que complementarán y potenciarán tu rutina de ejercicios. En OnFit, la cadena de gimnasios líder en Buenos Aires, te ofrecemos una cuidada selección de accesorios diseñados para ayudarte a alcanzar tus metas de acondicionamiento físico de manera efectiva y cómoda.</Typography>
               <Box sx={{ mt: 5 }}>
-                <Button color='secondary' size='large'>Descubre nuestros accesorios</Button>
+                <Button color='secondary' size='large' onClick={()=> router.push('/accesorios')}>Descubre nuestros accesorios</Button>
               </Box>
             </div>
 
@@ -136,7 +140,7 @@ export default function Home() {
               <Typography sx={{ mt: 1, width: '80%' }} variant='subtitle1'>Suplementos de Calidad para Potenciar Tu Entrenamiento</Typography>
               <Typography sx={{ mt: 1, width: '80%' }} variant='body1'>Descubre nuestra selección de suplementos de alta calidad diseñados para optimizar tu rendimiento y maximizar los resultados de tu entrenamiento. Te ofrecemos una amplia gama de suplementos esenciales, desde proteínas hasta pre-work y más, para ayudarte a alcanzar tus metas fitness de manera efectiva. </Typography>
               <Box sx={{ mt: 5 }}>
-                <Button color='secondary' size='large'>¡Potenciarme ahora!</Button>
+                <Button color='secondary' size='large' onClick={()=> router.push('/suplementos')}>¡Potenciarme ahora!</Button>
               </Box>
             </div>
 
