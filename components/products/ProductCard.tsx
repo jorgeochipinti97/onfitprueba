@@ -57,15 +57,16 @@ export const ProductCard: FC<Props> = ({ product }) => {
       sm={4}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      sx={{ cursor: 'pointer' }}
+      sx={{ cursor: 'pointer',overflow:'hidden' }}
     >
-      <Box data-aos="flip-left" onClick={()=> router.push('/producto')}>
-        <Box sx={{ m: 1 }}>
+      <Box data-aos="flip-left" onClick={()=> router.push('/producto')}   sx={{overflow:'hidden'}}>
+        <Box sx={{ m: 1,overflow:'hidden' }}>
           <Link>
-            <Box display="flex" justifyContent="center">
+            <Box display="flex" justifyContent="center" sx={{overflow:'hidden'}}>
               <CardMedia
                 component="div"
                 className="fadeIn"
+                sx={{overflow:'hidden'}}
               // onLoad={() => setIsImageLoaded(true)}
               >
                 <Image
@@ -81,11 +82,11 @@ export const ProductCard: FC<Props> = ({ product }) => {
         <Box
           sx={{
             // display: isImageLoaded ? "block" : "none",
-            position: "relative",
+            position: "relative",overflow:'hidden'
           }}
 
         >
-          <Box display="flex" justifyContent="center">
+          <Box display="flex" justifyContent="center" sx={{overflow:'hidden'}}>
             <Typography
               variant="subtitle1"
               textAlign={"center"}
@@ -96,9 +97,9 @@ export const ProductCard: FC<Props> = ({ product }) => {
               {capitalizarPrimeraLetraPalabras(`${product.title}`)}
             </Typography>
           </Box>
-          <Box>
-            <Box display="flex" justifyContent="center" sx={{ mb: 1, mt: 2 }}>
-              <Link>
+          <Box sx={{overflow:'hidden'}}>
+            <Box display="flex" justifyContent="center" sx={{ mb: 1, mt: 2,overflow:'hidden' }}>
+              <Link sx={{overflow:'hidden'}}>
                 <Button color="primary" sx={{ width: "130px" }}>
                   <Typography
                     variant="body2"
