@@ -63,7 +63,7 @@ export const Navbar = () => {
               </Button>
             </NextLink>
             <NextLink href="/mujer" passHref>
-              <Button color={asPath === "/mujer" ? "primary" : "info"}>
+              <Button color={asPath === "/mujer" ? "secondary" : "info"}>
                 Mujeres
               </Button>
             </NextLink>
