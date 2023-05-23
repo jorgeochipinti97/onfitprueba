@@ -83,8 +83,8 @@ export const ProductFilterPage = () => {
             )
           }
         </Box>
-        <Box display="flex" justifyContent="space-around">
-          {/* <Box>
+        {/* <Box display="flex" justifyContent="space-around">
+          <Box>
             <FormControl sx={{ m: 3, minWidth: 120 }}>
               <InputLabel id="select-label">Sort By</InputLabel>
               <Select
@@ -98,7 +98,7 @@ export const ProductFilterPage = () => {
                 <MenuItem value={"high"}>Price: high to low </MenuItem>
               </Select>
             </FormControl>
-          </Box> */}
+          </Box>
           <Box>
             <Input
               sx={{ mt: 5 }}
@@ -109,7 +109,7 @@ export const ProductFilterPage = () => {
               placeholder="Search..."
             />
           </Box>
-        </Box>
+        </Box> */}
       </Box>
 
       <>
