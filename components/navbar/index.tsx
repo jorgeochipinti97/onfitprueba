@@ -68,7 +68,7 @@ export const Navbar = () => {
               </Button>
             </NextLink>
             <NextLink href="/suplementos" passHref>
-              <Button color={asPath === "/suplemento" ? "secondary" : "info"}>
+              <Button color={asPath === "/suplementos" ? "secondary" : "info"}>
                 Suplementos
               </Button>
             </NextLink>
@@ -135,6 +135,9 @@ export const Navbar = () => {
                 <ShoppingCartOutlined />
               </Badge>
             </IconButton>
+            <Button onClick={toggleSideMenu} sx={{display:{xs:'block', sm:'block', md:'none'}}}>
+              Menu
+            </Button>
           </Box>
         </Box>
       </Toolbar>
