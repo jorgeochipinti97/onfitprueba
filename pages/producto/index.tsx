@@ -149,9 +149,6 @@ const ProductPage = () => {
               Agregar al carrito
             </Button>
           </Box>
-          <Box>
-            <FormQuery product_={product.title} />
-          </Box>
         </Grid>
       </Grid>
     </ShopLayout>

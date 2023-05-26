@@ -56,7 +56,7 @@ export const ProductFilterPage = () => {
   }
 
   const todasCategoriasHombre = ['remera oversize', 'remera deportiva', 'musculosa', 'buzo', 'short', 'pantalon','medias'];
-  const todasCategoriasMujer = ['remera oversize', 'remera deportiva', 'top', 'buzo', 'calza', 'short','medias2 ']
+  const todasCategoriasMujer = ['remera oversize', 'remera deportiva', 'top', 'buzo', 'calza', 'short','medias']
   const todasCategoriasSuplementos = ['proteina', 'creatina', 'quemadores', 'vitaminas',]
   const todasCategoriasMaquinas = ['mancuernas', 'maquinas', 'home']
   const todasCategoriasAccesorios = ['gorros', 'straps', 'cinturones', 'guantes', 'botellas', 'shakers']
