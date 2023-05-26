@@ -97,8 +97,8 @@ const router = useRouter()
           <Grid item sm={6} lg={6} xl={6} >
 
             <div data-aos="fade-right" style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', textAlign: 'center' }}>
-              <Typography sx={{ mt: 1, width: '80%' }} variant='subtitle1'>Equipamiento de Última Generación para Tu Hogar</Typography>
-              <Typography sx={{ mt: 1, width: '80%' }} variant='body1'>Descubre nuestra variedad de equipos de vanguardia para entrenamiento funcional, cardio y fuerza. Confía en la calidad y el respaldo de OnFit para disfrutar de una experiencia de gimnasio excepcional en la comodidad de tu hogar.</Typography>
+              <Typography sx={{ mt: 1, width: '80%' }} variant='subtitle1'>Equipamiento de Última Generación</Typography>
+              <Typography sx={{ mt: 1, width: '80%' }} variant='body1'>Descubre nuestra variedad de equipos de vanguardia para entrenamiento funcional, cardio y fuerza. Confía en la calidad y el respaldo de OnFit para disfrutar de una experiencia de gimnasio excepcional.</Typography>
               <Box sx={{ mt: 5 }} justifyContent='center'>
                 <Button color='secondary' size='large' onClick={()=> router.push('/equipamiento')}>Explora nuestro catálogo</Button>
               </Box>
@@ -156,11 +156,11 @@ const router = useRouter()
           </Grid>
         </Grid>
 
-        <Divider sx={{ my: 1, mb: 5 }} />
+        {/* <Divider sx={{ my: 1, mb: 5 }} />
         <div data-aos="fade-up" style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', textAlign: 'center', }}>
           <Typography variant='h1'>El Lugar Perfecto para Tu Transformación Fitness</Typography>
           <Typography variant='body1' sx={{ width: '80%', mt: 1.5 }}>Nuestras sedes se encuentran quipadas con tecnología de vanguardia y supervisadas por expertos, nuestras instalaciones te brindan un ambiente inspirador para alcanzar tus metas. Únete a nosotros y experimenta el máximo rendimiento en nuestras sedes de OnFit.</Typography>
-        </div>
+        </div> */}
 
 
 
