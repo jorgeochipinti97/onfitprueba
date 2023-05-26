@@ -8,5 +8,5 @@ export interface IProduct {
     subtype?: ISubtype
 }
 
-export type IType = 'hombre' | 'mujer' | 'suplementos' | 'equipamiento' | 'accesorios' | 'medias'
-export type ISubtype = 'remera oversize' | 'remera deportiva' | 'musculosa' | 'buzo' | 'short' | 'pantalon' | 'top' | 'calza' | 'proteina' | 'creatina' | 'quemadores' | 'vitaminas' | 'mancuernas' |'bolsos' | 'maquinas' | 'training home' | 'gorros' | 'straps' | 'guantes' | 'cinturones' | 'shakers' | 'botellas'
+export type IType = 'hombre' | 'mujer' | 'suplementos' | 'equipamiento' | 'accesorios'
+export type ISubtype = 'remera oversize' | 'remera deportiva' | 'musculosa' | 'buzo' | 'short' | 'pantalon' | 'medias' | 'top' | 'calza' | 'proteina' | 'creatina' | 'quemadores' | 'vitaminas' | 'mancuernas' | 'bolsos' | 'maquinas' | 'training home' | 'gorros' | 'straps' | 'guantes' | 'cinturones' | 'shakers' | 'botellas'|'medias'

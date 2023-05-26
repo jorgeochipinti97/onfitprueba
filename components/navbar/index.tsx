@@ -36,7 +36,7 @@ export const Navbar = () => {
   };
 
   return (
-    <AppBar sx={{ textDecoration: "none", overflow: 'hidden' }}>
+    <AppBar sx={{ textDecoration: "none", overflow: 'hidden',}}>
       <Toolbar sx={{ textDecoration: "none", overflow: 'hidden', }}>
         <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
           <Box sx={{ mt: 2, mb: 2 }}>
@@ -80,11 +80,6 @@ export const Navbar = () => {
             <NextLink href="/accesorios" passHref>
               <Button color={asPath === "/accesorios" ? "secondary" : "info"}>
                 Accesorios
-              </Button>
-            </NextLink>
-            <NextLink href="#" passHref>
-              <Button color={asPath === "/medias" ? "secondary" : "info"}>
-                Medias
               </Button>
             </NextLink>
             <NextLink href="/faqs" passHref>

@@ -1,38 +1,19 @@
-import { useState, useContext, useEffect } from "react";
-import {
-  NextPage,
-  GetServerSideProps,
-  GetStaticPaths,
-  GetStaticProps,
-} from "next";
-import { useRouter } from "next/router";
-
+import { useState,  } from "react";
 import {
   Box,
   Button,
-  Card,
-  CardMedia,
-  Chip,
   Divider,
   Grid,
   IconButton,
-  Link,
-  MenuItem,
-  Modal,
-  Select,
-  TextField,
   Typography,
 } from "@mui/material";
 
 import { CartContext } from "../../context/cart/CartContext";
-
 import { ShopLayout } from "../../components/layouts";
 import { ProductSlideshow } from "../../components/products";
-
 import { IProduct, ICartProduct } from "../../interfaces";
 import { capitalizarPrimeraLetraPalabras, currency } from "../../utils";
 import NextLink from "next/link";
-
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import CurrencyBitcoinIcon from "@mui/icons-material/CurrencyBitcoin";
 import { tesloApi } from "../../api";
@@ -47,14 +28,14 @@ import FormQuery from "../../components/FormQuery";
 import { constants } from "http2";
 
 const ProductPage = () => {
-  const product =    {
+  const product = {
     description: '',
-    images: ['https://res.cloudinary.com/dcvieavco/image/upload/v1678770982/stainless-steel-water-bottle-black-17oz-front-640d672f77c6b_gxmaz7.jpg','https://res.cloudinary.com/dcvieavco/image/upload/v1678770983/stainless-steel-water-bottle-black-17oz-front-640d670f8245a_lj8ojc.jpg'],
+    images: ['https://res.cloudinary.com/dcvieavco/image/upload/v1678770982/stainless-steel-water-bottle-black-17oz-front-640d672f77c6b_gxmaz7.jpg', 'https://res.cloudinary.com/dcvieavco/image/upload/v1678770983/stainless-steel-water-bottle-black-17oz-front-640d670f8245a_lj8ojc.jpg'],
     price: 100,
     slug: 'botella_onfit',
     title: 'Botella Onfit',
     type: 'accesorios',
-}
+  }
 
   const [currentValue, setCurrentValue] = useState(0);
   const addOrRemove = (value: number) => {
@@ -80,7 +61,6 @@ const ProductPage = () => {
             <Button color="secondary">Volver</Button>
           </NextLink>
         </Box>
-
         <Box sx={{ m: 2 }}>
           {isInFavorites ? (
             <FavoriteIcon
@@ -95,7 +75,6 @@ const ProductPage = () => {
           )}
         </Box>
       </Box>
-
       <Grid container spacing={3}>
         <Grid item xs={12} sm={7}>
           <ProductSlideshow
@@ -129,14 +108,12 @@ const ProductPage = () => {
                   }}
                 >
                   <Typography variant="button">
-                     {`${currency.formattwo(product.price)}`}
+                    {`${currency.formattwo(product.price)}`}
                   </Typography>
                 </Button>
               </NextLink>
             </Box>
             <Divider sx={{ my: 1 }} />
-
-
             <Box sx={{ my: 2 }}>
               <Typography variant="subtitle2" sx={{ m: 2 }}>
                 Cantidad
@@ -156,9 +133,8 @@ const ProductPage = () => {
                 </Box>
               </Box>
             </Box>
-
             {/* Descripción */}
-            <Box sx={{ m:1 }} display="flex" justifyContent="justify" >
+            <Box sx={{ m: 1 }} display="flex" justifyContent="justify" >
               <Typography variant="subtitle2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum itaque nulla delectus, minima fuga, consequatur vitae esse quaerat nam, provident minus libero. Molestiae nisi voluptatum recusandae vero ducimus, modi non veritatis fugiat veniam fugit odit illo molestias facere dolore soluta nobis placeat repellendus doloremque praesentium optio. Praesentium libero accusamus voluptatibus.</Typography>
             </Box>
 
@@ -169,7 +145,7 @@ const ProductPage = () => {
             </Box>
           </Box>
           <Box display='flex' justifyContent='center'>
-            <Button color="success"  size="large">
+            <Button color="success" size="large">
               Agregar al carrito
             </Button>
           </Box>

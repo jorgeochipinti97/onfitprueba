@@ -55,8 +55,8 @@ export const ProductFilterPage = () => {
     setSubtype_(subType__)
   }
 
-  const todasCategoriasHombre = ['remera oversize', 'remera deportiva', 'musculosa', 'buzo', 'short', 'pantalon'];
-  const todasCategoriasMujer = ['remera oversize', 'remera deportiva', 'top', 'buzo', 'calza', 'short']
+  const todasCategoriasHombre = ['remera oversize', 'remera deportiva', 'musculosa', 'buzo', 'short', 'pantalon','medias'];
+  const todasCategoriasMujer = ['remera oversize', 'remera deportiva', 'top', 'buzo', 'calza', 'short','medias2 ']
   const todasCategoriasSuplementos = ['proteina', 'creatina', 'quemadores', 'vitaminas',]
   const todasCategoriasMaquinas = ['mancuernas', 'maquinas', 'home']
   const todasCategoriasAccesorios = ['gorros', 'straps', 'cinturones', 'guantes', 'botellas', 'shakers']
@@ -83,7 +83,7 @@ export const ProductFilterPage = () => {
             )
           }
         </Box>
-        {/* <Box display="flex" justifyContent="space-around">
+        <Box display="flex" justifyContent="space-around">
           <Box>
             <FormControl sx={{ m: 3, minWidth: 120 }}>
               <InputLabel id="select-label">Sort By</InputLabel>
@@ -109,7 +109,7 @@ export const ProductFilterPage = () => {
               placeholder="Search..."
             />
           </Box>
-        </Box> */}
+        </Box>
       </Box>
 
       <>
