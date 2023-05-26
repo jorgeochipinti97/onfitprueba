@@ -9,7 +9,7 @@ import Image from "next/image";
 import { useRouter } from 'next/router';
 
 export default function Home() {
-const router = useRouter()
+  const router = useRouter()
 
 
   let populares: IProduct[] = [
@@ -95,20 +95,19 @@ const router = useRouter()
           </Grid>
 
           <Grid item sm={6} lg={6} xl={6} >
-
             <div data-aos="fade-right" style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', textAlign: 'center' }}>
               <Typography sx={{ mt: 1, width: '80%' }} variant='subtitle1'>Equipamiento de Última Generación</Typography>
               <Typography sx={{ mt: 1, width: '80%' }} variant='body1'>Descubre nuestra variedad de equipos de vanguardia para entrenamiento funcional, cardio y fuerza. Confía en la calidad y el respaldo de OnFit para disfrutar de una experiencia de gimnasio excepcional.</Typography>
               <Box sx={{ mt: 5 }} justifyContent='center'>
-                <Button color='secondary' size='large' onClick={()=> router.push('/equipamiento')}>Explora nuestro catálogo</Button>
+                <Button color='secondary' size='large' onClick={() => router.push('/equipamiento')}>Explora nuestro catálogo</Button>
+              </Box>
+              <Box sx={{ mt: 5 }}>
+                <Button color='secondary' size='large' onClick={() => router.push('/hombre')}>¡Explorar ya!</Button>
               </Box>
             </div>
-
           </Grid>
           <Grid item sm={6} lg={6} xl={6} >
             <div data-aos="fade-left">
-
-
               <Box sx={{ textAlign: 'center' }} display='flex' justifyContent='center' >
                 <Image src='https://res.cloudinary.com/dcvieavco/image/upload/v1678771084/AnyConv.com__D_NQ_NP_984611-MLA31466353739_072019-O_plmihi.jpg' width={500} height={500} alt='asd' />
               </Box>
@@ -116,31 +115,26 @@ const router = useRouter()
           </Grid>
           <Grid item sm={6} lg={6} xl={6} >
             <div data-aos="fade-right">
-
               <Box sx={{ textAlign: 'center' }} display='flex' justifyContent='center' >
                 <Image src='https://res.cloudinary.com/dcvieavco/image/upload/v1678770982/stainless-steel-water-bottle-black-17oz-front-640d672f77c6b_gxmaz7.jpg' width={500} height={500} alt='asd' />
               </Box>
             </div>
-
           </Grid>
           <Grid item sm={6} lg={6} xl={6} >
-
             <div data-aos="fade-left" style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', textAlign: 'center' }}>
               <Typography sx={{ mt: 1, width: '80%' }} variant='subtitle1'>Accesorios de Alto Rendimiento para Potenciar Tu Entrenamiento</Typography>
               <Typography sx={{ mt: 1, width: '80%' }} variant='body1'>Descubre nuestra amplia gama de accesorios de alta calidad que complementarán y potenciarán tu rutina de ejercicios. En OnFit, la cadena de gimnasios líder en Buenos Aires, te ofrecemos una cuidada selección de accesorios diseñados para ayudarte a alcanzar tus metas de acondicionamiento físico de manera efectiva y cómoda.</Typography>
               <Box sx={{ mt: 5 }}>
-                <Button color='secondary' size='large' onClick={()=> router.push('/accesorios')}>Descubre nuestros accesorios</Button>
+                <Button color='secondary' size='large' onClick={() => router.push('/accesorios')}>Descubre nuestros accesorios</Button>
               </Box>
             </div>
-
           </Grid>
           <Grid item sm={6} lg={6} xl={6} >
-
             <div data-aos="fade-right" style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', textAlign: 'center' }}>
               <Typography sx={{ mt: 1, width: '80%' }} variant='subtitle1'>Suplementos de Calidad para Potenciar Tu Entrenamiento</Typography>
               <Typography sx={{ mt: 1, width: '80%' }} variant='body1'>Descubre nuestra selección de suplementos de alta calidad diseñados para optimizar tu rendimiento y maximizar los resultados de tu entrenamiento. Te ofrecemos una amplia gama de suplementos esenciales, desde proteínas hasta pre-work y más, para ayudarte a alcanzar tus metas fitness de manera efectiva. </Typography>
               <Box sx={{ mt: 5 }}>
-                <Button color='secondary' size='large' onClick={()=> router.push('/suplementos')}>¡Potenciarme ahora!</Button>
+                <Button color='secondary' size='large' onClick={() => router.push('/suplementos')}>¡Potenciarme ahora!</Button>
               </Box>
             </div>
 
@@ -161,10 +155,7 @@ const router = useRouter()
           <Typography variant='h1'>El Lugar Perfecto para Tu Transformación Fitness</Typography>
           <Typography variant='body1' sx={{ width: '80%', mt: 1.5 }}>Nuestras sedes se encuentran quipadas con tecnología de vanguardia y supervisadas por expertos, nuestras instalaciones te brindan un ambiente inspirador para alcanzar tus metas. Únete a nosotros y experimenta el máximo rendimiento en nuestras sedes de OnFit.</Typography>
         </div> */}
-
-
-
-{/* 
+        {/* 
         <Grid container spacing={2} sx={{ mt: 2 }} >
 
           <Grid
