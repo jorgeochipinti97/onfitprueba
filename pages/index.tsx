@@ -91,10 +91,10 @@ export default function Home() {
             <div data-aos="fade-left" style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', textAlign: 'center' }}>
               <Typography sx={{ mt: 1, width: '80%' }} variant='subtitle1'>Calidad Garantizada por OnFit</Typography>
               <Typography sx={{ mt: 1, width: '80%' }} variant='body1'>Nos comprometemos a ofrecerte la más alta calidad. Trabajamos con proveedores confiables y seleccionamos cada artículo de nuestra tienda con atención para garantizar tu satisfacción y mejorar tu experiencia de entrenamiento.</Typography>
-            </div>
             <Box sx={{ mt: 5 }}>
               <Button color='secondary' size='large' onClick={() => router.push('/hombre')}>¡Explorar ya!</Button>
             </Box>
+            </div>
           </Grid>
 
           <Grid item sm={6} lg={6} xl={6} >
