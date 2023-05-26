@@ -14,20 +14,20 @@ export const ClickHere = () => {
             xs={6}
             sm={4}
         >
-            <Card sx={{mx:2}}>
-                <Box  display='flex' justifyContent='center'>
-                    <NextLink href={'/contact'} prefetch={false}>
-                        {/* <Link> */}
+            <Card sx={{ mx: 2 }}>
+                <Box display='flex' justifyContent='center'>
 
-                        <CardMedia
-                            component='div'
-                            className='fadeIn'
-                            onLoad={() => setIsImageLoaded(true)}>
-                            <Image width={400} height={400} alt='royer' src='https://res.cloudinary.com/djk4q3tys/image/upload/v1652040590/uffw9po6ntgqvc0lx7zu.jpg' />
-                        </CardMedia>
+                    {/* <Link> */}
 
-                        {/* </Link> */}
-                    </NextLink>
+                    <CardMedia
+                        component='div'
+                        className='fadeIn'
+                        onLoad={() => setIsImageLoaded(true)}>
+                        <Image width={400} height={400} alt='royer' src='https://res.cloudinary.com/djk4q3tys/image/upload/v1652040590/uffw9po6ntgqvc0lx7zu.jpg' />
+                    </CardMedia>
+
+                    {/* </Link> */}
+
                 </Box>
             </Card>
             <Divider sx={{ my: 2 }} />
