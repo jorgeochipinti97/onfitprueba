@@ -6,7 +6,7 @@ const index = () => {
     return (
         <>
             <ShopLayout title='FAQS' pageDescription="faqs">
-                <Box display='flex' justifyContent='center' sx={{mt:5}}>
+                <Box display='flex' justifyContent='center' sx={{ my: 10 }}>
 
                     <Box sx={{ width: '100vw !important' }}>
 
@@ -61,7 +61,7 @@ const index = () => {
                                 <AccordionFaqs pregunta="Can I change the delivery address of my package?" respuesta='Unfortunately, the address cannot be changed once the shipment has been dispatched.' />
                                 <Divider sx={{ my: 1, m: 2 }} />
                             </div>
-                        </Box>  
+                        </Box>
                         <Box>
 
                             <div data-aos="fade-up-left">
